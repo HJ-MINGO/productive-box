@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 export default async function(query: string) {
   const res = await fetch(
-    'https://api.github.com/HJ-MINGO', {
+    'https://api.github.com/graphql', {
       method: 'POST',
       headers: {
         Authorization: `bearer ${process.env.GH_TOKEN}`,
